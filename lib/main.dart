@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tugas_2/ui/form_data.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,15 +8,12 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Aplikasi Flutter Pertama",
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Aplikasi Flutter Pertama"),
-        )
-      )
+      title: 'Aplikasi Flutter Pertama',
+      home: FormData(),
     );
   }
 }
